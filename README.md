@@ -21,6 +21,6 @@ It is a car or robot equipped with sensors to detect and avoid obstacles, like t
 
 # Code:
 I have created 2 files: one for the movements function, and the other for the main program.
-- In the movements file, I have created a function called `MakeMove` with 2 parameters for the left and right motor speeds. If the speed is negative, it means the motor has to move backward, and i multiplied it by -1 to make it positive; otherwise, the motor will go forward normally.
-- In the main file, I have defined my pins and created an object from the `SoftwareSerial` library which I named Bluetooth and assigned Rx & Tx to it. In the setup, I defined the pins mode and initialized the baud rate for both Bluetooth and Serial monitor. In the loop, I checked for incoming signals from the Bluetooth app controller. If it receives anything, I checked it and made a move based on it, otherwise I kept it stopped.
+- In the movements file, I have created a function called `MakeMove` with 2 parameters for the left and right motor speeds. If the speed is negative, it means the motor has to move backward, and I multiplied it by -1 to make it positive; otherwise, the motor will go forward normally.
+- In the main file, I have defined my pins and created an object from the `Servo` library which I named servo and attached servo_pin to it. In the setup, I defined the pins mode and initialized the baud rate for Serial monitor. In the loop, start by calculating the forward distance if it's not smaller or equal to 10 it will move forward else it will stop for awhile and search for an alternative path by looking right and left and move to the one which has larger space.
 
