@@ -4,15 +4,12 @@ simple obstacle avoiding car using an Arduino , Ultrasonic and Servo motor.
 # What is Obstacle Avoiding ?
 It is a car or robot equipped with sensors to detect and avoid obstacles, like the "Ultrasonic" sensor I utilized. The Ultrasonic sensor detects the distance between the car and the obstacle using ultrasound waves. If the car is within about 10cm of the obstacle, it will begin to search for an alternative path by looking right and left.
 
-
-![obstacle avoiding_bb](https://github.com/Hamaozil/Obstacle-Avoiding-car/assets/115914652/07743750-0b1b-449e-bf24-db5a8692afc7)
-
 ## Hardware used :
 1. Arduino nano
 2. Motor driver `l298n`
 3. Small breadboard
-4. Bluetooth Module `HC-05`
-5. 2*Resistors (100k-200k)
+4. Ultrasoinc
+5. Servo motor
 6. Yellow DC motors
 7. 4*Li Batteries
 8. jumpers
@@ -20,7 +17,7 @@ It is a car or robot equipped with sensors to detect and avoid obstacles, like t
 10. Booster
 
 # Hardware Connections
-![RC Car_bb](https://github.com/Hamaozil/RC-Car-with-HC-05/assets/115914652/12199c97-636c-42d0-9a73-93ad7f19808d)
+![obstacle avoiding_bb](https://github.com/Hamaozil/Obstacle-Avoiding-car/assets/115914652/07743750-0b1b-449e-bf24-db5a8692afc7)
 
 # Code:
 I have created 2 files: one for the movements function, and the other for the main program.
